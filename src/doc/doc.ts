@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-doc',
@@ -6,6 +6,14 @@ import { Component } from '@angular/core';
   templateUrl: './doc.html',
   styleUrl: './doc.css',
 })
-export class Doc {
+export class Doc implements OnInit{
+
+  url = {webActual:  document.location.href};
+
+
+  ngOnInit() {
+    //this.url = document.location.href;
+
+  }
 
 }
