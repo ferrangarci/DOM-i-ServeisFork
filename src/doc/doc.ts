@@ -1,4 +1,9 @@
 import {Component, OnInit} from '@angular/core';
+import {yellowSubmarine} from './yellowSubmarine';
+import {changeSize} from './changeSize';
+import {countWords} from './countWords'
+import {imatge} from './imatge'
+
 
 @Component({
   selector: 'app-doc',
@@ -12,8 +17,13 @@ export class Doc implements OnInit{
 
 
   ngOnInit() {
-    //this.url = document.location.href;
+    yellowSubmarine('amarillo')
+    changeSize('tamany')
+    countWords('contar_paraules');
+    imatge("imatge")
+
 
   }
 
+  protected readonly countWords = countWords;
 }
