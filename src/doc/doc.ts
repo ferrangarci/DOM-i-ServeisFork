@@ -3,6 +3,7 @@ import {yellowSubmarine} from './yellowSubmarine';
 import {changeSize} from './changeSize';
 import {countWords} from './countWords'
 import {imatge} from './imatge'
+import {crearSelect} from './desplegable';
 
 
 @Component({
@@ -21,8 +22,7 @@ export class Doc implements OnInit{
     changeSize('tamany')
     countWords('contar_paraules');
     imatge("imatge")
-
-
+    crearSelect('desplegable');
   }
 
   protected readonly countWords = countWords;
